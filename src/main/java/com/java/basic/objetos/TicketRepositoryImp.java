@@ -4,7 +4,7 @@ public class TicketRepositoryImp implements TicketRepository{
 
 
     @Override
-    public boolean print(Ticket ticket) {
-        return false;
+    public String print(Ticket ticket) {
+        return "impreso Sin tinta";
     }
 }
