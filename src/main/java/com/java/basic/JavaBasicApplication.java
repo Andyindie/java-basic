@@ -36,8 +36,8 @@ public class JavaBasicApplication {
 		mapList.put("1",new Ticket("ticket1"));
 		mapList.put("2",new Ticket("ticket1"));
 		mapList.put("3",new Ticket("ticket12"));
-		mapList.put("4",new Ticket("ticket14"));
-		mapList.put("5",new Ticket("ticket13"));
+		mapList.put("4",new Ticket("ticket1ñ"));
+		mapList.put("5",new Ticket("ticket1k"));
 
 
 		for(int i = 0 ; i < list.size(); i++ ){
