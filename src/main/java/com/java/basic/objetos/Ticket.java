@@ -1,6 +1,6 @@
 package com.java.basic.objetos;
 
-public class Ticket {
+public class Ticket extends Payment{
     private String titulo;
 
     public Ticket(String titulo) {

@@ -1,6 +1,10 @@
 package com.java.basic.objetos;
 
-public class TicketRepositoryImp implements TicketRepository{
+import lombok.extern.apachecommons.CommonsLog;
+import org.springframework.stereotype.Component;
+
+@Component
+public class TicketRepositoryImp implements TicketRepository {
 
 
     @Override
