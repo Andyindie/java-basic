@@ -1,12 +1,9 @@
 package com.java.basic;
 
-import com.java.basic.objetos.Ticket;
-import com.java.basic.objetos.TicketController;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import com.java.basic.domain.Ticket;
+import com.java.basic.controller.TicketController;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 
 public class JavaBasicApplication {
@@ -19,25 +16,21 @@ public class JavaBasicApplication {
 		Set<Ticket> setList = new HashSet<>() ;
 		Map<String,Ticket> mapList = new HashMap<>() ;
 
-		list.add(new Ticket("ticket1"));
-		list.add(new Ticket("ticket1"));
-		list.add(new Ticket("ticket12"));
-		list.add(new Ticket("ticket14"));
-		list.add(new Ticket("ticket13"));
-
-
-		setList.add(new Ticket("ticket1"));
-		setList.add(new Ticket("ticket1"));
-		setList.add(new Ticket("ticket12"));
-		setList.add(new Ticket("ticket14"));
-		setList.add(new Ticket("ticket13"));
-
-
-		mapList.put("1",new Ticket("ticket1"));
-		mapList.put("2",new Ticket("ticket1"));
-		mapList.put("3",new Ticket("ticket2"));
-		mapList.put("4",new Ticket("ticket1ñ"));
-		mapList.put("5",new Ticket("ticket1k"));
+		list.add(new Ticket("ticket1",0.0));
+		list.add(new Ticket("ticket1",0.0));
+		list.add(new Ticket("ticket12",0.0));
+		list.add(new Ticket("ticket14",0.0));
+		list.add(new Ticket("ticket13",0.0));
+		setList.add(new Ticket("ticket1",0.0));
+		setList.add(new Ticket("ticket1",0.0));
+		setList.add(new Ticket("ticket12",0.0));
+		setList.add(new Ticket("ticket14",0.0));
+		setList.add(new Ticket("ticket13",0.0));
+		mapList.put("1",new Ticket("ticket1",0.0));
+		mapList.put("2",new Ticket("ticket1",0.0));
+		mapList.put("3",new Ticket("ticket2",0.0));
+		mapList.put("4",new Ticket("ticket1ñ",0.0));
+		mapList.put("5",new Ticket("ticket1k",0.0));
 
 
 		for(int i = 0 ; i < list.size(); i++ ){
